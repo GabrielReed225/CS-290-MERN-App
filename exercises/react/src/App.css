@@ -1,0 +1,92 @@
+#root {
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Courier New';
+    background-color: darkolivegreen;
+    color: orangered;
+    margin: 25px, 25px, 25px, 25px;
+}
+
+
+h2 {
+    padding-top: 15px;
+    color: darkorange;
+    font-family: 'Comic Sans MS';
+    font-size: 30px;
+    position: relative;
+    bottom: 200px;
+}
+
+a:link {
+    color: aqua;
+    font-family: 'Comic Sans MS';
+    text-decoration: none
+}
+
+a:visited {
+    color: yellow;
+}
+
+
+tr, th {
+    background-color: floralwhite;
+    border: 1px solid black;
+    color: darkcyan;
+    font-family: 'Segoe UI Symbol';
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+tr, td {
+    text-align: right;
+    border: 1px solid black;
+    padding-left: 70px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.home {
+    margin: 80px;
+}
+
+.Header{
+    position: relative;
+    bottom: 300px;
+    left: 80px;
+    font-size:35px
+}
+
+.navi {
+    position: relative;
+    bottom: 280px;
+    left: 150px;
+    font-size: 25px
+
+}
+
+.collection-container {
+    position: relative;
+    bottom: 200px;
+}
+
+.Footer{
+    font-size: 15px;
+}
+
+.userInput {
+    font-size: 20px;
+    position: relative;
+    bottom: 200px;
+    height: 30px;
+ 
+}
+
+.selectInput {
+    font-size: 20px;
+    position: relative;
+    bottom: 200px;
+    height: 35px;
+}
