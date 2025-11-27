@@ -122,29 +122,6 @@ You can assume that the request body is a JSON object. However, your code must v
 #### Use ES Modules
 * Your REST API code must use ES modules (i.e., you cannot use Common JS modules)
 
-### Hints & Suggestions for the REST API
-* You can write the code to validate the request body from scratch, or write it using the package [express-validator](https://express-validator.github.io/docs/), whichever you prefer.
-* To validate the date property, you can write your own code or you can use the following function
-```JavaScript
-/**
-*
-* @param {string} date
-* Return true if the date format is MM-DD-YY where MM, DD and YY are 2 digit integers
-*/
-function isDateValid(date) {
-    // Test using a regular expression. 
-    // To learn about regular expressions see Chapter 6 of the text book
-    const format = /^\d\d-\d\d-\d\d$/;
-    return format.test(date);
-}
-```
-* The Mongoose function [updateOne](https://mongoosejs.com/docs/api.html#model_Model-updateOne) returns a promise that resolves to an object with information about the update operation.
-  * The value of the property `matchedCount` is `0` if no document matched the filter passed to `udpateOne`.
-  * You can use this to determine if a document with the specified ID exists or not.
-* The Mongoose function [findById](https://mongoosejs.com/docs/api.html#model_Model-findById) returns a promise.
-  * If a document is found matching the ID then the promise resolves to that document.
-  * Otherwise the promise resolves to a null value.
-
 ## React UI
 The UI must have the following 3 pages:
 
